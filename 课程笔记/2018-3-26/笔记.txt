@@ -1,0 +1,59 @@
+1.动画
+  vue-animate
+
+  6个class
+  .slide-enter {}                 //进入初始值
+  .slide-enter-active {}          //动画过程中
+  .slide-enter-to {}              //结束位置
+
+  .slide-leave {}
+  .slide-leave-active {}
+  .slide-leave-to {}
+
+  4种：
+  1.v-if      √
+  2.v-show    √
+  3.v-for
+  4.路由
+
+  <transition name="动画名"></transition>
+  <transition-group name="动画名" :key="最好不是index"></transition-group>
+
+
+  自定义动画class
+  enter-class="xx"、enter-active-class="xx"、enter-to-class="xx"
+
+  JS钩子
+  @before-enter
+  @enter
+  @after-enter
+  @enter-cancelled
+
+  vue2-animate.css
+
+--------------------------------------------------------------------------------
+
+2.vuex——大型(5人)
+  1.集中存储
+    state
+
+  2.东西
+    state       全局唯一集中状态存储
+    getter      获取
+    mutation    名词——修改所需的信息，配合action
+    action      动词——用mutation完成修改的过程——一个action里面可以有很多mutation
+    modules     命名空间——
+
+    mutation——同步的，原子操作
+    action——异步的，事务
+
+  3.设计理念——不是为了省事、少出事
+
+  4.原因
+    隔离——错误
+
+    耦合——
+
+--------------------------------------------------------------------------------
+
+3.路由

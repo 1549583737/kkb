@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script src="vue.js" charset="utf-8"></script>
+    <style media="screen">
+    .box {width:200px; height:200px; background:#CCC;}
+
+    .slide-enter {height:0}
+    .slide-enter-active {
+      transition:1s all ease;
+    }
+    .slide-enter-to {height:200px;}
+
+    .slide-leave {height:200px}
+    .slide-leave-active {
+      transition:1s all ease;
+    }
+    .slide-leave-to {height:0}
+    </style>
+    <script>
+    window.onload=function (){
+      let vm=new Vue({
+        el: '#div1',
+        data: {
+          b: true
+        },
+        methods: {
+          fnClick(){
+            this.b=!this.b;
+          }
+        }
+      });
+    };
+    </script>
+  </head>
+  <body>
+    <div id="div1">
+      <input type="button" name="" value="按钮" @click="fnClick">
+      <transition name="slide">
+        <div class="box" v-show="b"></div>
+      </transition>
+    </div>
+  </body>
+</html>

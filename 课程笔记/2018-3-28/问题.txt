@@ -1,0 +1,12 @@
+Option请求为啥和跨域没联系，忘记了 可不可以再说下^-^ 它的意义在于什么
+Option——1.检测、2.配置
+
+http2.0是不是也会有这个option请求能力
+
+google在Gmanager就是那个广告的js到底是干啥的，为什么建了站都要在页面引这个js
+
+能不能做个全局拦截器，在调用某些需要判断token是否失效之前做判断，若失效，直接跳转login界面？
+
+外键可不可以也演示一把:)
+
+node里面处理option请求，http.createServer()里面是怎么弄的，刚刚是router.options，现在原生的呢

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        //ES6面向对象
+        //1、class关键字、构造函数和类分开了
+        //2、class里面直接加方法
+
+        //继承:
+
+
+        //类和构造函数不分家 即是构造函数也是类
+        /*function User(name, pass) {
+            this.name = name;
+            this.pass = pass;
+        }
+
+        User.prototype.showName = function () {
+            alert(this.name);
+        }
+        User.prototype.showPass = function () {
+            alert(this.pass);
+        }
+        */
+
+        class User {
+            constructor(name, pass) {
+                this.name = name;
+                this.pass = pass;
+            }
+
+            showName() {
+                alert(this.name);
+            }
+
+            showPass() {
+                alert(this.pass);
+            }
+        }
+
+        var user = new User('zyx', 123);
+        user.showName();
+        user.showPass();
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

@@ -1,0 +1,8 @@
+购物车 cart_table 为啥非得是去和token关联，不和userID关联，就是回看ele项目产生的一个疑问
+
+implements和extends有什么区别
+implements    接口(interface)
+extends       继承(abstract)
+
+  interface和abstract：
+  任何类只能有1个父级、多个

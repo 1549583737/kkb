@@ -1,0 +1,30 @@
+Promise --承诺
+
+异步：操作之间没啥关系，同时进行多个操作
+同步：同事只能做一件事
+
+异步： 代码更复杂
+同步： 代码简单
+
+ajax('/banners', function(banner_data){
+    ajax('/hotItem', function(hotItem_data){
+        ajax('/slides', function(slides_data){
+            ajax('/recommends', function(recommends_data){})
+
+        })
+    })
+})
+
+Promise--消除异步请求
+*用同步一样的方式，来书写异步代码
+
+--------------------------------------------------
+
+Promise.all
+Promise.race 竞速
+
+Promise.race([
+    $.ajax({url: 'https://www.taobao.com'}),
+    $.ajax({url: 'https://www.suning.com'}),
+    $.ajax({url: 'https://www.jd.com'}),
+])

@@ -1,0 +1,105 @@
+混合式App——原生语言、Web
+1.为啥不直接用原生的
+  快、方便、兼容更多平台
+
+2.用的多吗——非常多(70%)
+
+  原生：性能高、开发费劲
+  混合：性能一般、开发方便
+
+3.怎么用
+  PhoneGap——国外、干净
+  APICloud——国内、功能丰富
+  React Native——
+  自己的框架
+
+--------------------------------------------------------------------------------
+
+PhoneGap -> Adobe -> Codova
+
+--------------------------------------------------------------------------------
+
+PhoneGap
+1.安装
+>npm i -g phonegap
+
+2.用
+framework7 -> UI框架
+
+--------------------------------------------------------------------------------
+
+hook——钩子    系统事件、通知
+
+--------------------------------------------------------------------------------
+
+测试：
+
+--------------------------------------------------------------------------------
+
+Battery Status                      电池
+Camera                              相机
+Contacts                            联系人
+Device Info                         设备信息
+Device Motion (accelerometer)       重力感应
+Device Orientation (compass)        指南针
+Dialogs (notification)              对话框
+File                                文件操作
+File Transfer                       文件传输
+Geolocation                         地理位置
+Globalization                       全球化
+InAppBrowser                        App内置浏览器
+Media                               播放媒体
+Media Capture                       媒体捕获——音频、视频、照片
+Network Information                 网络信息
+Vibration                           震动
+
+Splash Screen                       欢迎屏幕——在config改
+Status Bar                          状态栏——在config改
+Whitelist                           白名单——在config改
+
+--------------------------------------------------------------------------------
+
+1.deviceready
+2.
+
+--------------------------------------------------------------------------------
+
+2018-3-15
+aug 28 2018
+
+--------------------------------------------------------------------------------
+
+navigator.accelerometer.getCurentAccleration      一次
+  navigator.accelerometer.getCurentAccleration(成功, 失败);
+  navigator.accelerometer.getCurentAccleration(res=>{
+    res.x
+    res.y
+    res.z
+  }, err=>{
+    alert(err.msg);
+  });
+
+navigator.accelerometer.watchAccleration    监听
+  let id=navigator.accelerometer.watchAccleration(成功, 失败, 参数);
+navigator.accelerometer.clearWatch                清除
+  navigator.accelerometer.clearWatch(id);
+
+--------------------------------------------------------------------------------
+
+navigator.compass.getCurrentHeading(res=>{
+  res.xxxheading
+}, err=>{});
+navigator.compass.watchHeading()
+navigator.compass.clearWatch()
+
+--------------------------------------------------------------------------------
+
+文件权限
+1.IOS         严格——只能操作自己的文件
+2.Android     开放——任何文件
+
+--------------------------------------------------------------------------------
+
+混合式App
+
+--------------------------------------------------------------------------------

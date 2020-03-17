@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<script>
+    function User(name, pass) {
+        this.name = name;
+        this.pass = pass;
+    }
+
+    User.prototype.showName = function () {
+        alert(this.name);
+    }
+
+    User.prototype.showPass = function () {
+        alert(this.pass);
+    }
+
+    function VipUser(name, pass, level) {
+        User.call(this, name, pass);
+        this.level = level;
+    }
+
+    VipUser.prototype = new User();
+    VipUser.prototype.constructor = VipUser; //自己写少了这句没有意识到这句话的含义
+
+    VipUser.prototype.showLevel = function () {
+        alert(this.level);
+    }
+
+    var user1 = new VipUser('xyz', '123456', '1');
+
+    user1.showName();
+    user1.showPass();
+    user1.showLevel();
+
+    console.log(VipUser.prototype);
+
+
+</script>
+<body>
+
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+        let p = new Promise(function (resolve, reject) {
+            //异步代码
+            //resolve --成功了
+            //reject --失败了
+            $.ajax({
+                url: 'arr',
+                dataType: 'json',
+                success: function (data) {
+                    // alert(data);
+                    resolve(data);
+                },
+                error: function (err) {
+                    console.log('失败了', err);
+                    reject(err);
+                }
+            });
+        });
+        p.then(
+            function (arr) {
+                console.log('调用resolve方法');
+
+                alert(arr);
+            }, function (err) {
+                console.log('调用reject方法');
+
+                alert(err);
+            })
+    </script>
+</head>
+<body>
+
+</body>
+</html>

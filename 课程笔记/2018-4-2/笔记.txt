@@ -1,0 +1,93 @@
+Angular
+1. angular-cli   v1.x没有    v4.x
+  > cnpm i -g @angular/cli
+
+2. 建项目
+  > ng new 名
+
+3. 认识项目
+  .angular-cli.json       工程文件
+
+ng serve --open
+npm run start
+
+
+1.polyfills——补充JS原生功能
+2.spec——声明规则
+
+--------------------------------------------------------------------------------
+
+1.工程配置
+  .angular-cli.json
+
+2.源码
+  src/
+    index.html        入口HTML
+    main.ts           入口TS
+
+    app/              模块
+      xxx.component.ts      必须有
+      xxx.component.html    模板
+      xxx.component.css     样式
+
+      xxx.module.ts         模块声明文件
+      xxx.Component.spec.ts 测试用例
+
+--------------------------------------------------------------------------------
+
+//core——angular核心
+import { Component } from '@angular/core';
+
+//@component——标注(annotate)，给编译器看：声明一些meta信息(元信息)
+@Component({
+  selector: 'app-root',
+  templateUrl: './app.component.html',
+  styleUrls: ['./app.component.css']
+})
+
+//输出类
+export class AppComponent {
+    title = 'hello';
+
+}
+
+--------------------------------------------------------------------------------
+
+angular本身不难
+ts：
+1.变量类型
+2.参数类型
+3.返回值类型
+
+--------------------------------------------------------------------------------
+
+ts——类
+#半吊子
+
+--------------------------------------------------------------------------------
+
+ts的类：
+1.属性
+2.继承
+3.修饰符
+  访问控制
+    public        公有(默认)——谁都可以访问：类内部、子类、外部
+    protected     保护——类内部、子类
+    private       私有——类内部
+
+    *最小权限：对外的东西越少越好
+      所有属性——private、protected
+      方法——public、protected
+
+  成员
+    readonly      只读——只能在构造函数里修改
+    static        静态——无需实例化就可以调用
+      class名.xxx
+
+  参数属性
+
+
+抽象类：
+  只需要提供有哪些东西，而不需要实现，不需要实际的代码
+
+--------------------------------------------------------------------------------

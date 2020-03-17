@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        let [a, b, c] = [1, 2, 3];
+        let {e, f, g} = {e: 4, f: 5, g: 6};
+        console.log(a, b, c);
+        console.log(e, f, g);
+
+        let [{m, n}, [n1, n2, n3], num, str] = [{m: 12, n: 5}, [12, 4, 8], 8, 'zyx']
+        console.log(m, n, n1, n2, n3, num, str);
+
+        //粒度
+        let [json, arr, num1, str1] = [{m: 12, n: 5}, [12, 4, 8], 8, 'zyx'];
+        console.log(json, arr, num1, str1);
+
+        //注意1： let {a, b} = {12, 5} 错误的写法
+        //注意2： let {a, b} = [12, 5] 错误的写法
+        //注意3： let [a, b]
+        // [a,b] = [12, 5]; 错误的写法
+
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

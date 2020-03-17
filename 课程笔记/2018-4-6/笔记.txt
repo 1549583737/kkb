@@ -1,0 +1,76 @@
+http://localhost:8090/list?page=3
+[{
+	"question_ID": "35005530",
+	"url": "https://www.zhihu.com/question/35005530",
+	"title": "请问做H5页面需要学什么？",
+	"score": "2636.71919",
+	"bestAnswer": {
+		"answer_ID": "81511568",
+		"url": "https://www.zhihu.com/question/35005530/answer/81511568",
+		"up_count": 291,
+		"author": "David",
+		"certified": "",
+		"bio": "H5资森玩家",
+		"summary": "从个人最近的研究观察和私人接单的情况看来，H5页面设计已经不仅限于微信广告，其实H5现在替代的是整个移动端用户前端交互的“界面”和载体，除了广告，可能还有各种minisite，活动落地页，内容轻博客，游戏等等，某种程度上替代了原生App的部分功能和应用…",
+		"content": "从个人最近的研究观察和私人接单的情况看来，H5页面设计已经不仅限于微信广告，其实H5现在替代的是整个移动端用户前端交互的“界面”和载体，除了广告，可能还有各种minisite，活动落地页，内容轻博客，游戏等等，某种程度上替代了原生App的部分功能和应用，..."
+	},
+	"question_title": "请问做H5页面需要学什么？",
+	"question_content": "不是用MAKA、初页那些模板直接替换，而是能用一些类似于互动大师的工具，做出动画效果比较独特的H5页面。我本身不是这个专业的，但是由于在工作中经常跟做H5的人撕。。有的效果明明我在其他H5里面见到过，他们还是说做不了，忽悠我，说我不是专业的不懂，最后给我一个像屎一样的H5，我还得捏着鼻子给他们钱，所以我决定去学，然后糊他们一脸。"
+}, ...]
+
+http://localhost:8090/detail?id=35005530
+{
+	"question_ID": "35005530",
+	"url": "https://www.zhihu.com/question/35005530",
+	"title": "请问做H5页面需要学什么？",
+	"score": "2636.71919",
+	"bestAnswer": {
+		"answer_ID": "81511568",
+		"url": "https://www.zhihu.com/question/35005530/answer/81511568",
+		"up_count": 291,
+		"author": "David",
+		"certified": "",
+		"bio": "H5资森玩家",
+		"summary": "从个人最近的研究观察和私人接单的情况看来，H5页面设计已经不仅限于微信广告，其实H5现在替代的是整个移动端用户前端交互的“界面”和载体，除了广告，可能还有各种minisite，活动落地页，内容轻博客，游戏等等，某种程度上替代了原生App的部分功能和应用…",
+		"content": "从个人最近的研究观察和私人接单的情况看来，H5页面设计已经不仅限于微信广告，其实H5现在替代的是整个移动端用户前端交互的“界面”和载体，除了广告，可能还有各种minisite，活动落地页，内容轻博客，游戏等等，某种程度上替代了原生App的部分功能和应用，..."
+	},
+	"question_title": "请问做H5页面需要学什么？",
+	"question_content": "不是用MAKA、初页那些模板直接替换，而是能用一些类似于互动大师的工具，做出动画效果比较独特的H5页面。我本身不是这个专业的，但是由于在工作中经常跟做H5的人撕。。有的效果明明我在其他H5里面见到过，他们还是说做不了，忽悠我，说我不是专业的不懂，最后给我一个像屎一样的H5，我还得捏着鼻子给他们钱，所以我决定去学，然后糊他们一脸。",
+	"answers": [{
+		"answer_ID": "81511568",
+		"url": "http://www.zhihu.com/api/v4/answers/81511568",
+		"content": "从个人最近的研究观察和私人接单的情况看来，H5页面设计已经不仅限于微信广告，其实H5现在替代的是整个移动端用户前端交互的“界面”和载体，除了广告，可能还有各种minisite，活动落地页，内容轻博客，游戏等等，某种程度上替代了原生App的部分功能和应用…",
+		"createdTime": 1452752957,
+		"author": {
+			"avatarUrlTemplate": "https://pic4.zhimg.com/da8e974dc_{size}.jpg",
+			"type": "people",
+			"name": "David",
+			"url": "http://www.zhihu.com/api/v4/people/3c066c8e259c2f6d319629c79d063f0e",
+			"gender": 1,
+			"userType": "people",
+			"urlToken": "david-wang-8-9",
+			"isAdvertiser": false,
+			"avatarUrl": "https://pic4.zhimg.com/da8e974dc_is.jpg",
+			"isOrg": false,
+			"headline": "H5资森玩家",
+			"followerCount": 764,
+			"badge": [],
+			"id": "3c066c8e259c2f6d319629c79d063f0e"
+		},
+		"updatedTime": 1452752957
+	}, ...]
+}
+
+Mongodb在这个项目中体现下吧...
+
+vue 循环生成三级联动怎么做
+
+webpack配置手动带我们在项目中配一下讲讲
+
+通过for循环，生成多个三级联动，彼此间不受干扰，还有不同的默认选中
+
+
+指令、哪些；传参、通信；事件、pipe；Mongodb
+
+
+对于年纪比较大的全栈，比如35岁以上了，技术的路还可以走吗:) 还是说仍然做一名主力的全栈开发-_-说白了，年纪大的程序员有没有市场:)

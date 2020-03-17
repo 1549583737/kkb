@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        //ES6面向对象
+        //1、class关键字、构造函数和类分开了
+        //2、class里面直接加方法
+
+        //继承: super--
+        // 超类 = 父类
+        // extends
+
+        class User {
+            constructor(name, pass) {
+                this.name = name;
+                this.pass = pass;
+            }
+
+            showName() {
+                alert(this.name);
+            }
+
+            showPass() {
+                alert(this.pass);
+            }
+        }
+
+        class vipUser extends User {
+            constructor(name, pass, level) {
+                super(name, pass);
+                this.level = level;
+            }
+
+            showLevel() {
+                alert(this.level);
+            }
+        }
+
+        var user = new vipUser('zyx', 123, 1);
+        user.showName();
+        user.showPass();
+        user.showLevel();
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>
